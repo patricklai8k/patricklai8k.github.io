@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "Patrick Lai",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "patrick.lai.8k@gmail.com",
+    "website": "http://patricklai8k.github.io",
+    "summary": "A summary of Patrick...",
+    "location": {
+      "city": "Toronto",
+      "countryCode": "CAN"
+    },
+    "profiles": [{
+      "network": "LinkedIn",
+      "username": "Patrick Lai",
+      "url": "https://www.linkedin.com/in/patricklaih/"
+    }]
+  },
+  "work": [{
+    "company": "Influitive",
+    "position": "Frontend Developer",
+    "website": "https://influitive.com/about",
+    "startDate": "2018-01-01",
+    "endDate": "2020-01-01",
+    "summary": "As a member of the frontend team I would lead frontend development for teams when building new features, working closely with designers.",
+    "highlights": [
+      "Lead a team to improve overall User experience of our application.",
+      "worked on relieving admin burden by introducing campaigns that provide compelling content to end users. This feature allowed admins to browse a list of campaigns and see which ones suit their users and be able to download and publish directly on the dashboard.",
+      "Developed and published white-label mobile apps for customer hubs",
+      "Developed multihub tools that empowered enterprise customers with multiple products"
+    ]
+  },
+  {
+    "company": "Architech",
+    "position": "Software Engineer",
+    "website": "https://www.architech.ca/about-us/",
+    "startDate": "2015-01-01",
+    "endDate": "2018-01-01",
+    "highlights": [
+      "Built out B2B Hub application that allows all Businesses to manage their account.",
+      "Built Telus’ small business challenge website, using Contentful with React and Redux, allowing for quick deployments and allowing stakeholders to update information on demand.",
+      "Redesigning and rebuilding the entire Drivetest system across Ontario that delivers 1 million+ exams per anum.",
+      "Developed Sportchek VDK (Virtual Department Store Kiosk) and Video Wall applications. These applications were a part of Sportchek’s in-store innovations which allow customers to interact with products in active engaging ways. "
+    ]
+  },
+  {
+    "company": "Minted",
+    "position": "Software Engineer Co-op",
+    "website": "https://www.architech.ca/about-us/",
+    "startDate": "2014-01-01",
+    "highlights": [
+      "Headed development on complete rework on Minted’s product Upload Process. "
+    ]
+  },
+  {
+    "company": "Plex Systems",
+    "position": "Software Engineer Co-op",
+    "website": "https://www.architech.ca/about-us/",
+    "startDate": "2013-01-01",
+    "highlights": [
+      "Developed customer facing JavaScript-based WYSIWYG document editor. Features include creating flexible tables, uploading and manipulating images and document import and exporting"
+    ]
+  }],
+  "education": [{
+    "institution": "University of Waterloo",
+    "area": "Applied Science Systems Design Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2010-09-01",
+    "endDate": "2015-05-01"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "keywords": [
+      "React",
+      "Styled Components",
+      "Functional Components",
+      "Angular"
+    ]
+  },
+  {
+    "name": "Containerization",
+    "keywords": [
+      "Docker",
+      "Docker Compose"
+    ]
+  },
+  {
+    "name": "Mobile",
+    "keywords": [
+      "Android"
+    ]
+  }],
+  "meta": { "theme": "stackoverflow" }
+}

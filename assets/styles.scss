@@ -3,7 +3,18 @@
 @import url('https://unpkg.com/primer/build/build.css');
 @import 'highlight-syntax';
 
-
+@font-face{
+  font-family: 'Restora';
+  src: url('/assets/RestoraExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Restora';
+  src: url('/assets/RestoraThinItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
@@ -17,6 +28,10 @@
     position: relative;
     top: 2px;
     width: 12px;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 .emoji {
@@ -48,7 +63,174 @@
     margin-bottom: 0px;
   }
 }
+.logo-top {
+  width: 70px;
+}
+
+.next-section {
+  text-align: center;
+}
+
+.header-container {
+  background-image: linear-gradient(40deg, #f7fafc, #f2e7e6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.custom-header {
+  height: 500px;
+  color: #2e2a2a
+}
+
+.color-accent {
+  height: 50px;
+  background: linear-gradient(40deg, #eb1d0e, #ff6741)
+}
 
 .min-height-full {
   min-height: 100vh;
+}
+
+.tech-container {
+  border: 5px solid #ff0c0c62;
+  border-radius: 15px;
+}
+
+.indent {
+  margin-left: 25px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  box-shadow: 5px 5px 10px #B2B2B2;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.bubble {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #B2B2B2;
+  display: inline-block;
+  padding: 20px 30px;
+  position: relative;
+  vertical-align: top;
+  margin: 5px 30px 5px; 
+}
+
+.bubble::before {
+  background-color: #F2F2F2;
+  box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+  content: "\00a0";
+  display: block;
+  height: 16px;
+  position: absolute;
+  top: 65px;
+  left: -10px;
+  transform: rotate( 29deg ) skew( -35deg );
+  width:  20px;
+}
+
+.next-button {
+  width: 30px;
+  height: 30px;
+}
+
+.next-button-image {
+  width: 30px;
+  height: 30px;
+  background: url('/assets/chevron.png');
+  background-size: 100%;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 1px 2px 4px #B2B2B2;
+  transition: ease 100ms;
+}
+
+.next-button-image:hover {
+  transform: translate(0, -3px)
+}
+
+.company-container {
+  box-shadow: 2px 2px 5px #B2B2B2;
+  border-radius: 5px;
+  padding: 20px;
+  // background-image: linear-gradient(#fffefe, #f1efef);
+}
+
+.company-logo {
+  height: 23px;
+}
+
+.company-name {
+  color: #959da5;
+  font-size: 12px;
+}
+
+.topics-container {
+  justify-content: center;
+}
+
+.custom-footer {
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(40deg, #eb1d0e, #ff6741)
+}
+
+.social-links-ftr-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-ftr-inner {
+ padding: 0 10px;
+}
+
+.social-links-hdr-container {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-hdr-inner {
+  padding: 10px 0;
+ }
+
+@media only screen and (max-width: 768px) {
+  .header-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bubble {
+    margin: 30px 30px 5px; 
+  }
+  .bubble::before {
+    top: -7px;
+    left: 47%;
+    transform: rotate(117deg) skew(-35deg);
+  }
+}
+
+.contact-icon {
+  max-height: 32px;
+  max-width: 32px;
 }

@@ -1,8 +1,10 @@
 {% include header.html %}
 
 <div class="header-container">
-  <div class="container-xl py-6 p-responsive">
-    {% include customhead.html metadata=true %}
+  <div class="header-container-inner">
+    <div class="header-container-border">
+      {% include customhead.html metadata=true %}
+    </div>
   </div>
 </div>
 <div class="color-accent"></div>
@@ -24,3 +26,4 @@
   {% endunless %}
 </div>
 {% include footer.html %}
+ 

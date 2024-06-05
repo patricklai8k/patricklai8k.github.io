@@ -6,12 +6,13 @@
       {% include topic-card.html %}
     </div>
   {% endfor %}
-</div>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Other tech that I have used</p>
-<div class="d-flex flex-wrap gutter-condensed mb-4 topics-container">
   {% for topic in site.more_topics %}
     <div class="col-3 col-md-2 col-lg-2 mb-3">
       {% include topic-card.html %}
     </div>
   {% endfor %}
 </div>
+<!-- <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Other tech that I have used</p>
+<div class="d-flex flex-wrap gutter-condensed mb-4 topics-container">
+  
+</div> -->

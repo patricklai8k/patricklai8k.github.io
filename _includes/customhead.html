@@ -1,14 +1,16 @@
-<div class="custom-header">
-  <div class="text-center mb-8 anim-fade-in">
+<div class="custom-header" id="customHeader">
+  <canvas id="background"></canvas>
+  <div class="text-center mb-2 anim-fade-in">
     <img src="{{ "/assets/initLogo.png"}}" class="logo-top">
   </div>
   <h1 hidden>Welcome to patricklai.ca</h1>
   <div class="header-content">
-    <img src="{{ user.avatar_url }}" class="circle avatar" />
+    <img src="{{ user.avatar_url }}" class="circle avatar avatar-circle" />
     <div class="bubble typing-text">
-      <p id="type-target1" class="mb-1 f2">Hey I'm Patrick Lai. 👋</p>
+      <h2 id="type-target1" class="header-title mb-1">Hey I'm Patrick.</h2>
+      <div class="hand-wave">👋</div>
       <p id="type-target3" class="mb-3 f2">
-        I'm a Web Developer based in Toronto.
+        I'm a Web Developer based in Canada.
       </p>
       <p id="type-target3" class="mb-1 f4">My current interests include:</p>
       <p id="type-target3" class="mb-1 f4 indent">

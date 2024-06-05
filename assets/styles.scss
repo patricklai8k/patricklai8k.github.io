@@ -71,11 +71,19 @@ h2 {
   }
 }
 .logo-top {
+  margin-top: 90px;
   width: 70px;
+  z-index: 1;
+  @media screen and (max-width: 600px) {
+    margin-top: 36px;
+  }
 }
 
 .next-section {
+  margin-top: -40px;
+  position: relative;
   text-align: center;
+  z-index: 3;
 }
 
 .header-container {
@@ -84,13 +92,37 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000000;
+  height: 100vh;
+}
+
+.header-container-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+}
+
+.header-container-border {
+  border-image: linear-gradient(45deg, #261ff9, #c8e1ff, #0468ff) 30;
+  border-width: 4px;
+  border-style: solid;
+  height: 100%;
+  width: 100%;
 }
 
 .custom-header {
-  height: 500px;
+  height: 100%;
   color: #2e2a2a;
+  position: relative;
+  background: linear-gradient(178deg, #0066c8, #ff8a33);
   @media screen and (max-width: 600px) {
-    height: 80vh;
+    height: 100%;
   }
 }
 
@@ -122,24 +154,42 @@ h2 {
   box-shadow: 5px 5px 10px #b2b2b2;
 }
 
+.header-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-left: 45px;
+  @media screen and (max-width: 600px) {
+    margin: auto;
+  }
+}
+
 .header-content {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-top: 10vh;
+}
+
+.avatar-circle {
+  z-index: 1;
 }
 
 .bubble {
-  background-color: #f2f2f2;
-  border-radius: 10px;
+  background-color: rgba($color: #ffffff, $alpha: 1);
+  backdrop-filter: blur(10px);
+  border-style: solid;
+  border-image: linear-gradient(135deg, #635efd, #deedff, #3683f7) 30;
   box-shadow: 5px 5px 10px #b2b2b2;
   display: inline-block;
   padding: 20px 30px;
   position: relative;
   vertical-align: top;
   margin: 5px 30px 5px;
+  z-index: 2;
 
   @media screen and (max-width: 600px) {
-    margin: 5px 0 !important;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    margin: 5px 12px !important;
     padding: 20px 16px;
   }
 }
@@ -152,9 +202,64 @@ h2 {
   height: 16px;
   position: absolute;
   top: 65px;
-  left: -10px;
+  left: -13px;
   transform: rotate(29deg) skew(-35deg);
   width: 20px;
+
+  border-bottom: solid 3px #635efd;
+  border-left: solid 3px #635efd;
+  @media screen and (max-width: 600px) {
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    display: none;
+  }
+}
+
+.hand-wave {
+  animation: wave 2s infinite;
+  position: absolute;
+  font-size: 50px;
+  top: 10px;
+  left: 10px;
+  @media screen and (max-width: 600px) {
+    left: calc(50% - 45px);
+    display: none;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) translate(-10px);
+  }
+  10% {
+    transform: rotate(20deg) translate(10px);
+  }
+  20% {
+    transform: rotate(-20deg) translate(-10px);
+  }
+  30% {
+    transform: rotate(20deg) translate(10px);
+  }
+  40% {
+    transform: rotate(-20deg) translate(-10px);
+  }
+  50% {
+    transform: rotate(20deg) translate(10px);
+  }
+  60% {
+    transform: rotate(-20deg) translate(-10px);
+  }
+  70% {
+    transform: rotate(20deg) translate(10px);
+  }
+  80% {
+    transform: rotate(-20deg) translate(-10px);
+  }
+  90% {
+    transform: rotate(20deg) translate(10px);
+  }
+  100% {
+    transform: rotate(0deg) translate(-10px);
+  }
 }
 
 .next-button {
@@ -217,13 +322,17 @@ h2 {
 
 .social-links-hdr-container {
   position: absolute;
-  top: 40px;
-  right: 35px;
+  top: 90px;
+  right: 85px;
   flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    top: 26px;
+    right: 35px;
+  }
 }
 
 .social-links-hdr-inner {
@@ -236,13 +345,15 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .bubble {
     margin: 30px 30px 5px;
   }
   .bubble::before {
-    top: -7px;
+    top: -10px;
+    border-width: 2px;
     left: 47%;
     transform: rotate(117deg) skew(-35deg);
   }
@@ -251,4 +362,21 @@ h2 {
 .contact-icon {
   max-height: 32px;
   max-width: 32px;
+}
+
+.experience-container {
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.experience-card {
+  max-width: 800px;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
 }

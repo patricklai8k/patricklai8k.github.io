@@ -56,8 +56,16 @@ topics:
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
 
   - name: Redux
-    web_url: https://github.com/topics/reduc
+    web_url: https://github.com/topics/redux
     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png
+  
+  - name: Node
+    web_url: https://github.com/topics/node
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+  
+  - name: Next
+    web_url: https://https://github.com/topics/next
+    image_url: https://raw.githubusercontent.com/github/explore/2ebcebd7b163b2ab12cb5a40bf29264799c81c03/topics/nextjs/nextjs.png
   
   - name: Webpack
     web_url: https://github.com/topics/webpack

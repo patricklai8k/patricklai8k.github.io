@@ -112,9 +112,9 @@ h2 {
 }
 
 .header-container-border {
-  border-image: linear-gradient(45deg, #261ff9, #c8e1ff, #0468ff) 30;
-  border-width: 4px;
-  border-style: solid;
+  // border-image: linear-gradient(45deg, #261ff9, #c8e1ff, #0468ff) 30;
+  // border-width: 4px;
+  // border-style: solid;
   height: 100%;
   width: 100%;
 }
@@ -154,7 +154,7 @@ h2 {
   width: 150px;
   height: 150px;
   border: 5px solid white;
-  box-shadow: 5px 5px 10px #b2b2b2;
+  // box-shadow: 5px 5px 10px #b2b2b2;
 }
 
 .header-title {
@@ -180,9 +180,9 @@ h2 {
 .bubble {
   background-color: rgba($color: #ffffff, $alpha: 0.5);
   backdrop-filter: blur(10px);
-  border-style: solid;
-  border-image: linear-gradient(135deg, #635efd, #deedff, #3683f7) 30;
-  box-shadow: 5px 5px 10px #b2b2b2;
+  // border-style: solid;
+  // border-image: linear-gradient(135deg, #635efd, #deedff, #3683f7) 30;
+  // box-shadow: 5px 5px 10px #b2b2b2;
   display: inline-block;
   padding: 20px 30px;
   position: relative;
@@ -219,7 +219,7 @@ h2 {
 }
 
 .hand-wave {
-  animation: wave 2s infinite;
+  animation: wave 2s;
   position: absolute;
   font-size: 50px;
   top: 10px;

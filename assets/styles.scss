@@ -116,16 +116,13 @@ h2 {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 50px;
+  padding: 25px;
   @media screen and (max-width: 600px) {
     padding: 0;
   }
 }
 
 .header-container-border {
-  // border-image: linear-gradient(45deg, #261ff9, #c8e1ff, #0468ff) 30;
-  // border-width: 4px;
-  // border-style: solid;
   height: 100%;
   width: 100%;
 }
@@ -165,23 +162,24 @@ h2 {
   width: 150px;
   height: 150px;
   border: 5px solid white;
-  // box-shadow: 5px 5px 10px #b2b2b2;
 }
 
 .header-title {
   font-size: 36px;
   font-weight: 700;
-  margin-left: 45px;
-  @media screen and (max-width: 600px) {
-    margin: auto;
-  }
 }
 
 .header-content {
+  color: #ffe4c3;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 0 90px;
+  position: relative;
   margin-top: 10vh;
+  z-index: 1;
+  @media screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
 }
 
 .avatar-circle {
@@ -191,9 +189,6 @@ h2 {
 .bubble {
   background-color: rgba($color: #ffffff, $alpha: 0.5);
   backdrop-filter: blur(10px);
-  // border-style: solid;
-  // border-image: linear-gradient(135deg, #635efd, #deedff, #3683f7) 30;
-  // box-shadow: 5px 5px 10px #b2b2b2;
   display: inline-block;
   padding: 20px 30px;
   position: relative;
@@ -298,10 +293,7 @@ h2 {
 }
 
 .company-container {
-  // box-shadow: 2px 2px 5px #b2b2b2;
-  // border-radius: 5px;
   padding: 20px;
-  // background-image: linear-gradient(#fffefe, #f1efef);
 }
 
 .company-logo {
@@ -344,26 +336,6 @@ h2 {
   @media screen and (max-width: 600px) {
     top: 26px;
     right: 35px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .header-content {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .bubble {
-    margin: 30px 30px 5px;
-  }
-  .bubble::before {
-    top: -10px;
-    border-width: 2px;
-    left: 47%;
-    transform: rotate(117deg) skew(-35deg);
   }
 }
 

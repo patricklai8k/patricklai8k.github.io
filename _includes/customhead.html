@@ -42,39 +42,43 @@
           >
         </a>
       </div>
-      <!-- <div class="social-links-hdr-inner">
-        <a
-          href="https://dribbble.com/patricklai"
-          class="tooltipped tooltipped-s"
-          aria-label="Dribbble"
-          target="_blank"
-        >
-          <img class="contact-icon" src="{{ "/assets/Dribble-mark.png"}}" /><span
-            class="d-none"
-            >Dribble</span
-          >
-        </a>
-      </div> -->
     </div>
   </div>
   <h1 hidden>Welcome to patricklai.ca</h1>
-  <div class="header-content">
-    <img src="{{ user.avatar_url }}" class="circle avatar avatar-circle" />
-    <div class="bubble typing-text">
-      <h2 id="type-target1" class="header-title mb-1">Hey I'm Patrick.</h2>
-      <div class="hand-wave">👋</div>
+  <div class="header-content anim-fade-in">
+      <h2 id="type-target1" class="header-title mb-1">Hi, I'm Patrick.</h2>
       <p id="type-target3" class="mb-3 f2">
-        I'm a Web Developer based in Canada.
+        I'm a <span id="variable-role">Frontend Developer</span> based in Canada.
       </p>
-      <p id="type-target3" class="mb-1 f4">My current interests:</p>
-      <p id="type-target3" class="mb-1 f4 indent">
-        💻 Frontend Design, Development <br />
-        ✨ Exploring creative web technologies
-      </p>
-    </div>
   </div>
   
 </div>
 <div class="next-section">
   <button id="scroll-1" class="next-button-image" />
 </div>
+<script>
+  var variableRoles = [
+    "UI/UX Enthusiast",
+    "Problem Solver",
+    "Creative Thinker",
+    "Team Player",
+    "Frontend Developer",
+  ];
+  var i = 0;
+  var role = document.getElementById("variable-role");
+  setTimeout(function () {
+    role.style.opacity = 0;
+  }, 2300);
+  role.style.transition = '0.2s';
+  setInterval(function () {
+    role.style.opacity = 1;
+    setTimeout(function () {
+      role.style.opacity = 0;
+    }, 2300);
+    role.innerHTML = variableRoles[i];
+    i++;
+    if (i == variableRoles.length) {
+      i = 0;
+    }
+  }, 2500);
+</script>

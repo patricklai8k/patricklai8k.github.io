@@ -70,12 +70,23 @@ h2 {
     margin-bottom: 0px;
   }
 }
+
 .logo-top {
-  margin-top: 90px;
-  width: 70px;
+  width: 170px;
   z-index: 1;
+}
+
+.logo-top-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-left: 90px;
+  padding-right: 90px;
   @media screen and (max-width: 600px) {
-    margin-top: 36px;
+    align-items: center;
+    padding-top: 36px;
+    gap: 24px;
+    flex-direction: column;
   }
 }
 
@@ -325,22 +336,15 @@ h2 {
 }
 
 .social-links-hdr-container {
-  position: absolute;
-  top: 90px;
-  right: 85px;
-  flex-direction: column;
+  gap: 24px;
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 600px) {
     top: 26px;
     right: 35px;
   }
-}
-
-.social-links-hdr-inner {
-  padding: 10px 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -366,6 +370,10 @@ h2 {
 .contact-icon {
   max-height: 32px;
   max-width: 32px;
+  @media screen and (max-width: 600px) {
+    max-height: 24px;
+    max-width: 24px;
+  }
 }
 
 .experience-container {

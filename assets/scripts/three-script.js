@@ -58,25 +58,8 @@ function App(conf) {
     });
 
     initScene();
-    // initGui();
     animate();
   }
-
-//   function initGui() {
-    // noiseInput.value = 101 - conf.xyCoef;
-    // heightInput.value = conf.zCoef * 100 / 25;
-
-    // noiseInput.addEventListener('input', e => {
-    //   conf.xyCoef = 101 - noiseInput.value;
-    // });
-    // heightInput.addEventListener('input', e => {
-    //   conf.zCoef = heightInput.value * 25 / 100;
-    // });
-
-    // document.getElementById('trigger').addEventListener('click', e => {
-    //   updateLightsColors();
-    // });
-//   }
 
   function initScene() {
     scene = new THREE.Scene();
@@ -134,7 +117,6 @@ function App(conf) {
       gArray[i + 2] = simplex.noise4D(gArray[i] / conf.xyCoef, gArray[i + 1] / conf.xyCoef, time, mouse.x + mouse.y) * conf.zCoef;
     }
     plane.geometry.attributes.position.needsUpdate = true;
-    // plane.geometry.computeBoundingSphere();
   }
 
   function animateLights() {

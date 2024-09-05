@@ -131,7 +131,7 @@ h2 {
   height: 100%;
   color: #2e2a2a;
   position: relative;
-  background: linear-gradient(178deg, #0066c8, #ff8a33);
+  background: linear-gradient(178deg, #0066c8, #370b0b);
   @media screen and (max-width: 600px) {
     height: 100%;
   }
@@ -147,8 +147,6 @@ h2 {
 }
 
 .tech-container {
-  border: 5px solid #0c30ff62;
-  border-radius: 15px;
   @media screen and (max-width: 600px) {
     margin: 0 12px;
   }
@@ -170,15 +168,34 @@ h2 {
 }
 
 .header-content {
-  color: #ffe4c3;
+  color: #fff6eb;
   display: flex;
   flex-direction: column;
+  font-family: "Marcellus", serif;
   padding: 0 90px;
   position: relative;
   margin-top: 10vh;
+  max-width: 75%;
   z-index: 1;
   @media screen and (max-width: 600px) {
     padding: 0 20px;
+    max-width: 100%;
+  }
+}
+
+.header-content-top-text {
+  font-size: 24px;
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+.header-content-bottom-text {
+  color: #fff6eb;
+  font-family: "Marcellus", serif;
+  font-size: 16px;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
   }
 }
 
@@ -214,7 +231,6 @@ h2 {
   left: -13px;
   transform: rotate(29deg) skew(-35deg);
   width: 20px;
-
   border-bottom: solid 3px #635efd;
   border-left: solid 3px #635efd;
   display: none;
@@ -355,7 +371,16 @@ h2 {
 }
 
 .experience-card {
+  font-family: "Marcellus", serif;
   max-width: 800px;
+}
+
+.section-title {
+  font-family: "Marcellus", serif;
+}
+
+.section-text {
+  font-family: "Marcellus", serif;
 }
 
 canvas {
